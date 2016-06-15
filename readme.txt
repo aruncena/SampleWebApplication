@@ -1,2 +1,2 @@
-This is Maven project
-Second stage
+This is the Maven project
+Second stage and edited
