@@ -2,8 +2,6 @@ trigger:
 - master
 pool:
  name: 'local'
- demands: 
- - Agent.Name -equals amazonliux
 stages:
   - stage: Build
     jobs:
