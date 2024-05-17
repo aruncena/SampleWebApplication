@@ -6,10 +6,6 @@ pool:
  - Agent.Name -equals amazonliux
 stages:
   - stage: Build
-    pool:
-     name: 'local'
-     demands: 
-       - Agent.Name -equals amazonliux
     jobs:
     - job:
       displayName: 'Maven Build'
@@ -21,6 +17,7 @@ stages:
           publishJUnitResults: false
           codeCoverageToolOption: 'JaCoCo'
           javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.11'
           mavenVersionOption: 'Default'
           mavenAuthenticateFeed: false
           effectivePomSkip: false
