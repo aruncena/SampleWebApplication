@@ -10,16 +10,7 @@ stages:
     - job:
       displayName: 'Maven Build'
       steps:
-      - task: Maven@4
-        inputs:
-          mavenPomFile: 'pom.xml'
-          goals: 'clean package'
-          publishJUnitResults: false
-          codeCoverageToolOption: 'JaCoCo'
-          javaHomeOption: 'JDKVersion'
-          mavenVersionOption: 'Default'
-          mavenAuthenticateFeed: false
-          effectivePomSkip: false
-          sonarQubeRunAnalysis: false
+      - script: 
+         echo "Hello"
           
        
